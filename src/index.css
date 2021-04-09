@@ -1,0 +1,229 @@
+/* Designed by dk_vaja */
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* css variables */
+
+:root {
+  --main-color: red;
+  --second-color: white;
+  --third-color: black;
+}
+
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 2vw;
+}
+
+/* navbar styling */
+
+nav {
+  background-color: var(--main-color);
+  display: flex;
+  height: 69px;
+  max-height:69px ;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed ;
+  top: 0;
+  z-index: 2;
+}
+
+#logo-div a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-weight: bold;
+}
+#logo-div a:hover {
+  color: var(--third-color);
+}
+
+#navbar-ul{
+  display: flex;
+  margin-left: 5.5rem;
+}
+#navbar-ul li {
+  list-style: none;
+}
+#navbar-ul li a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 0.7em;
+  padding: 0.7rem 0.6rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar-ul li a:hover {
+  background-color: var(--second-color);
+  color: var(--third-color);
+}
+
+.list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main heading style */
+
+#main-heading {
+  text-align: center;
+  padding: 1rem 0rem;
+  font-size: 1.2em;
+  margin-top: 3.5rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* news container style */
+
+#container {
+  /* background-color: yellow; */
+  margin: 0rem 5rem;
+}
+
+#news-box {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  margin: 1rem 0rem;
+  height: 12rem;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: .4rem;
+}
+
+/* news box style */
+
+/* news image style */
+
+.font {
+  font-family: "PT Sans", sans-serif;
+}
+
+#news-img-box {
+  width: 10rem;
+  height: 10rem;
+  /* background-color: violet; */
+}
+
+#news-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: .3rem;
+}
+#news-img:hover {
+  opacity: 0.8;
+  transition: all .4s .1s ease;
+}
+
+#news-content-box {
+  margin-left: 1rem;
+}
+
+#news-title {
+  font-size: 1.2rem;
+}
+
+#news-source {
+  font-size: .6rem;
+  font-weight: normal;
+}
+#news-source span {
+  font-weight: bold;
+}
+#news-time {
+  font-size: 0.6rem;
+  margin-left: .3rem;
+}
+#news-time span {
+  font-weight: bold;
+}
+
+#news-source-box
+{
+  display: flex;
+  margin: .4rem 0rem;
+}
+
+#news-desc {
+  font-size: 0.7rem;
+  text-align: justify;
+  max-height: 3.8rem;
+  min-height: 3.8rem;
+  height: 100%;
+}
+
+#news-link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  padding: 0.4rem 0.8rem;
+  margin: 1rem 0rem;
+  font-weight: 800;
+  border-radius: .2rem;
+}
+
+#news-link:hover{
+  color: var(--second-color);
+  background-color: var(--main-color);
+  transition: all .3s .1s ease;
+}
+
+/* footer style */
+#footer-ul {
+  display: flex;
+  text-decoration: none;
+}
+
+#footer-ul li{
+list-style: none;
+}
+#footer-ul li a{
+  text-decoration: none;
+  font-size: .6rem;
+  color: var(--second-color);
+  padding: 0rem .3rem;
+}
+#footer-ul li a:hover{
+
+  color: var(--third-color);
+}
+
+footer {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  text-align: center;
+  font-size: 0.6rem;
+  padding: .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width:1000px) {
+  nav {
+   
+    height: 26px;
+    
+  }
+  
+}
